@@ -15,7 +15,7 @@ subprojects {
             toolVersion = libs.versions.detekt.get()
             buildUponDefaultConfig = true
             allRules = false
-            source.setFrom(files("${rootProject.projectDir}/detekt-config.yml"))
+            source.setFrom(files("${rootProject.projectDir}/config/detekt/detekt.yml"))
         }
 
         tasks.withType(io.gitlab.arturbosch.detekt.Detekt::class.java).configureEach {
